@@ -14,36 +14,42 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/selectTask"
-        android:id="@+id/selectTitle"
+        android:id="@+id/selectTitleView"
         android:textStyle="bold"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
         />
 
-    <ImageButton
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="120dp"
-        android:id="@+id/taskOne"
-        android:layout_below="@+id/selectTitle"
+        android:background="@color/colorPrimary"
+        android:id="@+id/taskOneView"
+        android:layout_below="@+id/selectTitleView"
         android:layout_alignParentStart="true"
         android:layout_marginTop="50dp"
+        android:onClick="selectTask(1)"
         android:layout_alignParentEnd="true" />
 
-    <ImageButton
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="120dp"
-        android:id="@+id/taskTwo"
-        android:layout_below="@+id/taskOne"
+        android:background="@color/colorAccent"
+        android:id="@+id/taskTwoView"
+        android:layout_below="@+id/taskOneView"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp"
+        android:onClick="selectTask(2)"
         android:layout_alignParentEnd="true" />
 
-    <ImageButton
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="120dp"
-        android:id="@+id/taskThree"
-        android:layout_below="@+id/taskTwo"
+        android:id="@+id/taskThreeView"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/taskTwoView"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp"
+        android:onClick="selectTask(3)"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>
