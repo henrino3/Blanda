@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Blanda2</string>
+    <string name="title_activity_display_question">DisplayQuestion</string>
 </resources>
